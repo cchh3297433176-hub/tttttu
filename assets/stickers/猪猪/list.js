@@ -26,4 +26,12 @@
         { desc: '气疯了你满意了吗！', url: 'https://imgbed.heliar.top/i/ST0SkhSSAT0tNcJ7.jpg' },
         { desc: '熟睡中', url: 'https://imgbed.heliar.top/i/pa6PWuk1W2T9sM_i.jpg' },
         { desc: '突然出现', url: 'https://imgbed.heliar.top/i/rH-ZeZBzySvEydf1.jpg' },
-        { desc: '你这样对我我会哭的呀', url: 'https://imgbed.heliar.top/i/JVjz3snh4bQPeJPB.jpg' },
+        { desc: '你这样对我我会哭的呀', url: 'https://imgbed.heliar.top/i/JVjz3snh4bQPeJPB.jpg' }
+    ];
+
+    if (typeof window.registerStickerPack === 'function') {
+        window.registerStickerPack('猪猪', list);
+    } else {
+        window._MCYT_PENDING_STICKERS['猪猪'] = list;
+    }
+})();
